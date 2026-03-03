@@ -45,6 +45,22 @@ const Hero = () => {
             slabs, and civil scopes with hands‑on leadership, disciplined schedules,
             and consistent quality.
           </p>
+          <div className="mt-6 flex flex-wrap gap-3">
+            {[
+              "Retaining Walls",
+              "Foundations",
+              "Slab-on-Grade",
+              "Civil Concrete",
+              "Place & Finish",
+            ].map((item) => (
+              <span
+                key={item}
+                className="text-xs font-heading tracking-widest uppercase text-secondary-foreground/80 border border-secondary-foreground/20 px-3 py-1.5"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
           <motion.a
             href="#contact"
             initial={{ opacity: 0 }}

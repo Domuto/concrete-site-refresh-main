@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
 import heroImg from "@/assets/hero-construction.jpg";
+import structuralImg from "@/assets/structural.jpg";
+import tiltupImg from "@/assets/tiltup.jpg";
+import flatworkImg from "@/assets/amcrete-floor.jpg";
 
 const Projects = () => {
   return (
@@ -48,6 +51,40 @@ const Projects = () => {
             </span>
           </div>
         </motion.div>
+
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+          {[
+            {
+              title: "Structural Foundations",
+              image: structuralImg,
+            },
+            {
+              title: "Tilt‑Up Panels",
+              image: tiltupImg,
+            },
+            {
+              title: "Industrial Flatwork",
+              image: flatworkImg,
+            },
+          ].map((project) => (
+            <div key={project.title} className="group relative overflow-hidden">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-concrete-dark/80 via-concrete-dark/30 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-5">
+                <h4 className="font-heading text-lg uppercase tracking-wide text-secondary-foreground">
+                  {project.title}
+                </h4>
+                <span className="mt-2 inline-block text-xs font-heading tracking-widest uppercase text-primary">
+                  View Details →
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
