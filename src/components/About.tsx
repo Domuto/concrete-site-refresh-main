@@ -31,38 +31,30 @@ const About = () => {
           <div className="mt-6 space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>
               We are a concrete construction team specializing in retaining walls,
-              foundations, slab-on-grade, slab-on-metal deck, turned-down slabs,
-              footings, flatwork, civil concrete scopes, as well as place-and-finish
-              services. Retaining walls and structural foundation work are our core
-              specialties.
+              structural foundations, slab-on-grade, slab-on-metal deck, turned-down
+              slabs, footings, flatwork, civil scopes, and place-and-finish services.
+              Retaining walls and structural foundations are core specialties.
             </p>
             <p>
-              Our team is led by three business partners: Martín Covarrubias Sr.,
-              Martín Covarrubias Jr., and Nate Carranza, who collectively provide
-              field leadership, project coordination, and direct oversight on every
-              project. Martín Covarrubias Sr. and Martín Covarrubias Jr. serve as
-              jobsite superintendents and hands-on field leaders, managing daily
-              operations, crew productivity, and quality control. Both are actively
-              involved in layout and execution to ensure accuracy from start to
-              finish. Nate Carranza serves as Project Manager and primary point of
-              contact, coordinating communication, scheduling, and administrative
-              support to maintain clear alignment with the contractor at all times.
-              Together, the leadership team has several years of direct working
-              experience as a unit, operating with a strong emphasis on reliability,
-              safety, and performance.
+              The company is led by three business partners: Martín Covarrubias Sr.,
+              Martín Covarrubias Jr., and Nate Carranza. Martín Covarrubias Sr. and
+              Martín Covarrubias Jr. serve as jobsite superintendents and hands-on
+              field leaders overseeing daily operations, layout, productivity, and
+              quality control. Nate Carranza serves as Project Manager and primary
+              point of contact, coordinating communication, scheduling, estimating
+              support, and administrative operations.
             </p>
             <p>
-              Our workforce consists of experienced personnel, supported by office
-              coordination to ensure responsive communication and efficient project
-              execution. We perform our own layout using professional-grade
-              equipment and maintain sufficient tools to operate multiple crews and
-              mobilize quickly.
+              Our workforce is experienced and supported by office coordination to
+              keep communication responsive and execution efficient. We perform our
+              own layout with professional-grade equipment and maintain the tools
+              and resources to operate multiple crews and mobilize quickly.
             </p>
             <p>
-              We take pride in delivering dependable, high-quality concrete work
-              while maintaining schedule and communication standards, and we are
-              available to support your current or upcoming projects. References
-              can be provided upon request.
+              We take pride in dependable, high-quality work with strong
+              communication and schedule coordination. We welcome the opportunity
+              to support your current or upcoming projects, and references are
+              available upon request.
             </p>
           </div>
           <a

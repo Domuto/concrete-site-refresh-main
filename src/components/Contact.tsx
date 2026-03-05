@@ -34,7 +34,7 @@ const Contact = () => {
             team help bring your vision to life with industry‑leading concrete
             solutions.
           </p>
-          <div className="mt-10 space-y-4 text-secondary-foreground/70">
+          <div className="mt-10 space-y-6 text-secondary-foreground/70">
             <div>
               <span className="font-heading text-xs tracking-widest uppercase text-primary">
                 Location
@@ -43,15 +43,41 @@ const Contact = () => {
             </div>
             <div>
               <span className="font-heading text-xs tracking-widest uppercase text-primary">
-                Phone
+                Inquiry Email
               </span>
-              <p className="mt-1">(555) 018‑2244</p>
+              <p className="mt-1">mnmconcreteconstructors@gmail.com</p>
+              <p className="mt-1">El email de la companie es Mnmconcreteconstructors@gmail.com</p>
             </div>
             <div>
               <span className="font-heading text-xs tracking-widest uppercase text-primary">
-                Email
+                Contacts
               </span>
-              <p className="mt-1">estimating@mnmconcrete.com</p>
+              <div className="mt-3 space-y-4">
+                <div>
+                  <p className="font-heading text-sm uppercase tracking-wider text-secondary-foreground">
+                    Martín Covarrubias Sr.
+                  </p>
+                  <p className="mt-1">Senior Superintendent | Co-Owner</p>
+                  <p className="mt-1">Phone: (404) 449-4960</p>
+                  <p className="mt-1">Email: Mnmconcreteconstructors@gmail.com</p>
+                </div>
+                <div>
+                  <p className="font-heading text-sm uppercase tracking-wider text-secondary-foreground">
+                    Martín Covarrubias Jr.
+                  </p>
+                  <p className="mt-1">Field Superintendent | Co-Owner</p>
+                  <p className="mt-1">Phone: (678) 500-4911</p>
+                  <p className="mt-1">Email: Mnmconcreteconstructors@gmail.com</p>
+                </div>
+                <div>
+                  <p className="font-heading text-sm uppercase tracking-wider text-secondary-foreground">
+                    Nate Carranza
+                  </p>
+                  <p className="mt-1">Project Manager | Co-Owner</p>
+                  <p className="mt-1">Phone: +1 (678) 216-8077</p>
+                  <p className="mt-1">Email: Mnmconcreteconstructors@gmail.com</p>
+                </div>
+              </div>
             </div>
             <div>
               <span className="font-heading text-xs tracking-widest uppercase text-primary">
