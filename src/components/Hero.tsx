@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { ChevronRight } from "lucide-react";
 import heroImg from "@/assets/hero-construction.jpg";
 
 const Hero = () => {
@@ -61,16 +60,6 @@ const Hero = () => {
               </span>
             ))}
           </div>
-          <motion.a
-            href="#contact"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.6 }}
-            className="inline-flex items-center gap-2 mt-10 bg-primary text-primary-foreground font-heading text-lg tracking-widest uppercase px-10 py-4 hover:bg-primary/90 transition-colors group"
-          >
-            Request a Quote
-            <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </motion.a>
         </motion.div>
       </div>
     </section>

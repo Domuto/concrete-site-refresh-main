@@ -1,88 +1,94 @@
 import { motion } from "framer-motion";
-import tiltupImg from "@/assets/tiltup.jpg";
-import structuralImg from "@/assets/structural.jpg";
-import amcreteImg from "@/assets/amcrete-floor.jpg";
-import consultingImg from "@/assets/consulting.jpg";
 
 const services = [
   {
     title: "Tilt‑Up Panels",
     description:
       "Engineered tilt‑up solutions with precise placements, tight tolerances, and dependable schedules.",
-    image: tiltupImg,
+    image: "/IMG_9605.jpg",
   },
   {
     title: "Structural Concrete",
     description:
       "Foundations, elevated slabs, and structural packages for commercial and industrial builds.",
-    image: structuralImg,
+    image: "/IMG_9603.jpg",
   },
   {
     title: "Flatwork & Slabs",
     description:
       "High‑performance slabs and industrial flatwork designed for durability and smooth finishes.",
-    image: amcreteImg,
+    image: "/IMG_9602.jpg",
   },
   {
     title: "Pre‑Con & Consulting",
     description:
       "Budgeting, mix design support, constructability reviews, and phased scheduling guidance.",
-    image: consultingImg,
+    image: "/IMG_9601.jpg",
   },
 ];
 
-const buildoutImages = [
-  "/IMG_0758.jpg",
-  "/IMG_2038.jpg",
-  "/IMG_2048.jpg",
-  "/IMG_4766.jpg",
-  "/IMG_6211.jpg",
-  "/IMG_6726.jpg",
+const tankFoundationImages: string[] = [
+  "/IMG_9610.jpg",
+  "/IMG_9609.jpg",
+  "/IMG_9608.jpg",
+  "/IMG_9607.jpg",
+  "/IMG_9606.jpg",
+  "/IMG_9605.jpg",
+  "/IMG_9603.jpg",
+  "/IMG_9602.jpg",
 ];
 
-const placementImages = [
-  "/IMG_2038.jpg",
-  "/IMG_4766.jpg",
-  "/IMG_6211.jpg",
-  "/IMG_0758.jpg",
-  "/IMG_2048.jpg",
-  "/IMG_6726.jpg",
+const buildoutImages: string[] = [
+  "/IMG_9564.jpg",
+  "/IMG_9565.jpg",
+  "/IMG_9566.jpg",
+  "/IMG_9567.jpg",
+  "/IMG_9568.jpg",
+  "/IMG_9569.jpg",
+  "/IMG_9570.jpg",
+  "/IMG_9571.jpg",
+  "/IMG_9572.jpg",
 ];
 
-const wallImages = [
-  "/IMG_2048.jpg",
-  "/IMG_6726.jpg",
-  "/IMG_0758.jpg",
-  "/IMG_6211.jpg",
-  "/IMG_4766.jpg",
-  "/IMG_2038.jpg",
+const placementImages: string[] = [
+  "/IMG_9578.jpg",
+  "/IMG_9577.jpg",
+  "/IMG_9576.jpg",
+  "/IMG_9575.jpg",
 ];
 
-const slabImages = [
-  "/IMG_6211.jpg",
-  "/IMG_2048.jpg",
-  "/IMG_4766.jpg",
-  "/IMG_0758.jpg",
-  "/IMG_6726.jpg",
-  "/IMG_2038.jpg",
+const wallImages: string[] = [
+  "/IMG_9586.jpg",
+  "/IMG_9585.jpg",
+  "/IMG_9584.jpg",
+  "/IMG_9583.jpg",
+  "/IMG_9582.jpg",
+  "/IMG_9581.jpg",
+  "/IMG_9580.jpg",
+  "/IMG_9579.jpg",
 ];
 
-const residentialImages = [
-  "/IMG_0758.jpg",
-  "/IMG_6211.jpg",
-  "/IMG_2038.jpg",
-  "/IMG_2048.jpg",
-  "/IMG_6726.jpg",
-  "/IMG_4766.jpg",
+const slabImages: string[] = [
+  "/IMG_9590.jpg",
+  "/IMG_9589.jpg",
+  "/IMG_9588.jpg",
+  "/IMG_9587.jpg",
 ];
 
-const civilImages = [
-  "/IMG_2048.jpg",
-  "/IMG_6211.jpg",
-  "/IMG_0758.jpg",
-  "/IMG_4766.jpg",
-  "/IMG_2038.jpg",
-  "/IMG_6726.jpg",
+const residentialImages: string[] = [
+  "/IMG_9595.jpg",
+  "/IMG_9594.jpg",
+  "/IMG_9593.jpg",
+  "/IMG_9592.jpg",
+  "/IMG_9591.jpg",
+];
+
+const civilImages: string[] = [
+  "/IMG_9600.jpg",
+  "/IMG_9599.jpg",
+  "/IMG_9598.jpg",
+  "/IMG_9597.jpg",
+  "/IMG_9596.jpg",
 ];
 
 const Services = () => {
@@ -130,13 +136,63 @@ const Services = () => {
                   <p className="mt-3 text-secondary-foreground/70 text-sm max-w-md leading-relaxed">
                     {service.description}
                   </p>
-                  <span className="mt-4 inline-block font-heading text-xs tracking-widest uppercase text-primary group-hover:translate-x-2 transition-transform">
-                    Learn More →
-                  </span>
                 </div>
               </div>
             </motion.div>
           ))}
+        </div>
+
+        <div className="mt-16 grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-10 items-start">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {tankFoundationImages.map((image, index) => (
+              <motion.div
+                key={`${image}-${index}`}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.05, duration: 0.4 }}
+                className="group relative overflow-hidden bg-concrete-dark"
+              >
+                <img
+                  src={image}
+                  alt="Industrial water tank foundation work"
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-36 md:h-40 object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-concrete-dark/15 group-hover:bg-concrete-dark/25 transition-colors" />
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <h3 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-tight text-secondary-foreground">
+              Industrial Water Tank Foundations
+            </h3>
+            <p className="mt-4 text-secondary-foreground/70 leading-relaxed">
+              Our team has successfully completed 10 reinforced concrete foundations for
+              industrial water storage tanks on projects performed for major industrial clients.
+              These foundations required precise layout, reinforcement placement, anchor bolt
+              installation, and high-strength concrete placements to support large steel tank
+              structures.
+            </p>
+            <p className="mt-4 text-secondary-foreground/70 leading-relaxed">
+              Typical tank foundation systems included reinforced circular slab foundations and
+              ring wall foundations designed to distribute heavy loads while maintaining strict
+              elevation and alignment tolerances. Our crews performed formwork installation, rebar
+              placement, anchor bolt coordination, and concrete placement to ensure the tanks could
+              be safely erected and properly supported.
+            </p>
+            <p className="mt-4 text-secondary-foreground/70 leading-relaxed">
+              These projects required close coordination with tank installers, engineers, and
+              general contractors to ensure foundation accuracy and structural performance.
+            </p>
+          </motion.div>
         </div>
 
         <div className="mt-16 grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-10 items-start">

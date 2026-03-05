@@ -133,13 +133,17 @@ const Contact = () => {
               className="w-full bg-concrete-dark/50 border border-secondary-foreground/10 text-secondary-foreground px-4 py-3 focus:outline-none focus:border-primary transition-colors resize-none"
             />
           </div>
-          <button
-            type="submit"
-            className="inline-flex items-center gap-3 bg-primary text-primary-foreground font-heading text-sm tracking-widest uppercase px-10 py-4 hover:bg-primary/90 transition-colors group"
+          <a
+            href="#contact"
+            onClick={(e) => {
+              e.preventDefault();
+              (e.currentTarget.closest("form") as HTMLFormElement | null)?.submit();
+            }}
+            className="inline-flex items-center gap-2 font-heading text-sm tracking-widest uppercase text-primary hover:text-primary/80 transition-colors group"
           >
             Send Message
             <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </button>
+          </a>
         </motion.form>
       </div>
     </section>

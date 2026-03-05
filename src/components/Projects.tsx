@@ -1,8 +1,4 @@
 import { motion } from "framer-motion";
-import heroImg from "@/assets/hero-construction.jpg";
-import structuralImg from "@/assets/structural.jpg";
-import tiltupImg from "@/assets/tiltup.jpg";
-import flatworkImg from "@/assets/amcrete-floor.jpg";
 
 const Projects = () => {
   return (
@@ -33,7 +29,7 @@ const Projects = () => {
           className="relative overflow-hidden group cursor-pointer"
         >
           <img
-            src={heroImg}
+            src="/IMG_9609.jpg"
             alt="Commercial construction project"
             className="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-105"
           />
@@ -46,9 +42,6 @@ const Projects = () => {
               Our objective is simple: consistent quality and dependable delivery
               that builds long‑term partnerships.
             </p>
-            <span className="mt-4 inline-block font-heading text-sm tracking-widest uppercase text-primary">
-              View All Projects →
-            </span>
           </div>
         </motion.div>
 
@@ -56,15 +49,15 @@ const Projects = () => {
           {[
             {
               title: "Structural Foundations",
-              image: structuralImg,
+              image: "/IMG_9608.jpg",
             },
             {
               title: "Tilt‑Up Panels",
-              image: tiltupImg,
+              image: "/IMG_9607.jpg",
             },
             {
               title: "Industrial Flatwork",
-              image: flatworkImg,
+              image: "/IMG_9606.jpg",
             },
           ].map((project) => (
             <div key={project.title} className="group relative overflow-hidden">
@@ -78,9 +71,6 @@ const Projects = () => {
                 <h4 className="font-heading text-lg uppercase tracking-wide text-secondary-foreground">
                   {project.title}
                 </h4>
-                <span className="mt-2 inline-block text-xs font-heading tracking-widest uppercase text-primary">
-                  View Details →
-                </span>
               </div>
             </div>
           ))}

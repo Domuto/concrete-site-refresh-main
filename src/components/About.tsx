@@ -30,31 +30,46 @@ const About = () => {
           </h2>
           <div className="mt-6 space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>
-              We are a concrete construction team specializing in retaining walls,
-              structural foundations, slab-on-grade, slab-on-metal deck, turned-down
-              slabs, footings, flatwork, civil scopes, and place-and-finish services.
-              Retaining walls and structural foundations are core specialties.
+              We are a concrete construction team specializing in retaining walls, structural
+              foundations, slab-on-grade, slab-on-metal deck, turned-down slabs, footings,
+              flatwork, civil concrete scopes, and place-and-finish services. Retaining walls and
+              structural foundation work are among our core specialties.
             </p>
             <p>
-              The company is led by three business partners: Martín Covarrubias Sr.,
-              Martín Covarrubias Jr., and Nate Carranza. Martín Covarrubias Sr. and
-              Martín Covarrubias Jr. serve as jobsite superintendents and hands-on
-              field leaders overseeing daily operations, layout, productivity, and
-              quality control. Nate Carranza serves as Project Manager and primary
-              point of contact, coordinating communication, scheduling, estimating
-              support, and administrative operations.
+              Our team is led by three business partners: Martín Covarrubias Sr., Martín
+              Covarrubias Jr., and Nate Peralta, who collectively provide field leadership,
+              project coordination, and direct oversight on every project.
             </p>
             <p>
-              Our workforce is experienced and supported by office coordination to
-              keep communication responsive and execution efficient. We perform our
-              own layout with professional-grade equipment and maintain the tools
-              and resources to operate multiple crews and mobilize quickly.
+              The partnership was formed through years of working in the concrete industry and
+              recognizing the value of building a stronger team. Each partner previously operated
+              independently—Martín Covarrubias Sr. and Martín Covarrubias Jr. through F&W Concrete,
+              and Nathaniel Peralta through Gambit Concrete—but shared the same vision: combining
+              field experience, leadership, and operational coordination to build a company capable
+              of delivering larger and more complex projects.
             </p>
             <p>
-              We take pride in dependable, high-quality work with strong
-              communication and schedule coordination. We welcome the opportunity
-              to support your current or upcoming projects, and references are
-              available upon request.
+              Martín Covarrubias Sr. and Martín Covarrubias Jr. serve as jobsite superintendents and
+              hands-on field leaders, managing daily operations, crew productivity, and quality
+              control. Both are actively involved in layout and field execution to ensure accuracy
+              from start to finish.
+            </p>
+            <p>
+              Nathan Peralta serves as Project Manager and primary point of contact, coordinating
+              communication, scheduling, estimating support, and administrative operations to
+              maintain clear alignment with the contractor throughout the project.
+            </p>
+            <p>
+              Our workforce consists of experienced personnel supported by office coordination to
+              ensure responsive communication and efficient project execution. We perform our own
+              layout using professional-grade equipment and maintain the tools and resources
+              necessary to operate multiple crews and mobilize efficiently when required.
+            </p>
+            <p>
+              We take pride in delivering dependable, high-quality concrete work while maintaining
+              strong communication and schedule coordination on every project. We welcome the
+              opportunity to support your current or upcoming work, and references can be provided
+              upon request.
             </p>
           </div>
           <a
