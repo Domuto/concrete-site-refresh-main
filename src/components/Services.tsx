@@ -143,7 +143,7 @@ const Services = () => {
         </div>
 
         <div className="mt-16 grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-10 items-start">
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 order-2 lg:order-1">
             {tankFoundationImages.map((image, index) => (
               <motion.div
                 key={`${image}-${index}`}
@@ -170,6 +170,7 @@ const Services = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
+            className="order-1 lg:order-2"
           >
             <h3 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-tight text-secondary-foreground">
               Industrial Water Tank Foundations
@@ -201,7 +202,7 @@ const Services = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="order-2 lg:order-1"
+            className="order-1 lg:order-1"
           >
             <h3 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-tight text-secondary-foreground">
               Additions, Renovations & Tenant Build-Out Concrete
@@ -220,7 +221,7 @@ const Services = () => {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 order-1 lg:order-2">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 order-2 lg:order-2">
             {buildoutImages.map((image, index) => (
               <motion.div
                 key={image}
@@ -244,7 +245,7 @@ const Services = () => {
         </div>
 
         <div className="mt-16 grid grid-cols-1 lg:grid-cols-[1fr_1.1fr] gap-10 items-start">
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 order-2 lg:order-1">
             {placementImages.map((image, index) => (
               <motion.div
                 key={`${image}-${index}`}
@@ -271,6 +272,7 @@ const Services = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
+            className="order-1 lg:order-2"
           >
             <h3 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-tight text-secondary-foreground">
               Concrete Placement & Finishing
@@ -296,7 +298,7 @@ const Services = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="order-2 lg:order-1"
+            className="order-1 lg:order-1"
           >
             <h3 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-tight text-secondary-foreground">
               Cast-in-Place Structural Walls
@@ -315,7 +317,7 @@ const Services = () => {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 order-1 lg:order-2">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 order-2 lg:order-2">
             {wallImages.map((image, index) => (
               <motion.div
                 key={`${image}-${index}`}
@@ -339,7 +341,7 @@ const Services = () => {
         </div>
 
         <div className="mt-16 grid grid-cols-1 lg:grid-cols-[1fr_1.1fr] gap-10 items-start">
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 order-2 lg:order-1">
             {slabImages.map((image, index) => (
               <motion.div
                 key={`${image}-${index}`}
@@ -366,6 +368,7 @@ const Services = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
+            className="order-1 lg:order-2"
           >
             <h3 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-tight text-secondary-foreground">
               Slab Construction (Slab on Grade & Slab on Metal Deck)
@@ -392,7 +395,7 @@ const Services = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="order-2 lg:order-1"
+            className="order-1 lg:order-1"
           >
             <h3 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-tight text-secondary-foreground">
               Residential & Small Project Concrete
@@ -415,7 +418,7 @@ const Services = () => {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 order-1 lg:order-2">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 order-2 lg:order-2">
             {residentialImages.map((image, index) => (
               <motion.div
                 key={`${image}-${index}`}
@@ -439,7 +442,7 @@ const Services = () => {
         </div>
 
         <div className="mt-16 grid grid-cols-1 lg:grid-cols-[1fr_1.1fr] gap-10 items-start">
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 order-2 lg:order-1">
             {civilImages.map((image, index) => (
               <motion.div
                 key={`${image}-${index}`}
@@ -466,6 +469,7 @@ const Services = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
+            className="order-1 lg:order-2"
           >
             <h3 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-tight text-secondary-foreground">
               Civil & Site Concrete
