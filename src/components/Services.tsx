@@ -112,12 +112,14 @@ const Services = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
-              className="group relative overflow-hidden cursor-pointer"
+              className="group relative overflow-hidden cursor-pointer bg-concrete-dark"
             >
               <div className="relative h-72 overflow-hidden">
                 <img
                   src={service.image}
                   alt={service.title}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-concrete-dark/70 group-hover:bg-concrete-dark/80 transition-colors duration-300" />
@@ -169,11 +171,13 @@ const Services = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05, duration: 0.4 }}
-                className="group relative overflow-hidden"
+                className="group relative overflow-hidden bg-concrete-dark"
               >
                 <img
                   src={image}
                   alt="Additions, renovations, and tenant build-out concrete"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-36 md:h-40 object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-concrete-dark/15 group-hover:bg-concrete-dark/25 transition-colors" />
@@ -191,11 +195,13 @@ const Services = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05, duration: 0.4 }}
-                className="group relative overflow-hidden"
+                className="group relative overflow-hidden bg-concrete-dark"
               >
                 <img
                   src={image}
                   alt="Concrete placement and finishing"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-36 md:h-40 object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-concrete-dark/15 group-hover:bg-concrete-dark/25 transition-colors" />
@@ -259,11 +265,13 @@ const Services = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05, duration: 0.4 }}
-                className="group relative overflow-hidden"
+                className="group relative overflow-hidden bg-concrete-dark"
               >
                 <img
                   src={image}
                   alt="Cast-in-place structural wall construction"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-36 md:h-40 object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-concrete-dark/15 group-hover:bg-concrete-dark/25 transition-colors" />
@@ -281,11 +289,13 @@ const Services = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05, duration: 0.4 }}
-                className="group relative overflow-hidden"
+                className="group relative overflow-hidden bg-concrete-dark"
               >
                 <img
                   src={image}
                   alt="Slab construction and finishing"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-36 md:h-40 object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-concrete-dark/15 group-hover:bg-concrete-dark/25 transition-colors" />
@@ -354,11 +364,13 @@ const Services = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05, duration: 0.4 }}
-                className="group relative overflow-hidden"
+                className="group relative overflow-hidden bg-concrete-dark"
               >
                 <img
                   src={image}
                   alt="Residential and small project concrete"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-36 md:h-40 object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-concrete-dark/15 group-hover:bg-concrete-dark/25 transition-colors" />
@@ -376,11 +388,13 @@ const Services = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05, duration: 0.4 }}
-                className="group relative overflow-hidden"
+                className="group relative overflow-hidden bg-concrete-dark"
               >
                 <img
                   src={image}
                   alt="Civil and site concrete work"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-36 md:h-40 object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-concrete-dark/15 group-hover:bg-concrete-dark/25 transition-colors" />
