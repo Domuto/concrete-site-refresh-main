@@ -32,57 +32,57 @@ const services = [
 ];
 
 const buildoutImages = [
-  "/IMG_0758.HEIC",
-  "/IMG_2038.HEIC",
-  "/IMG_2048.HEIC",
-  "/IMG_4766.HEIC",
-  "/IMG_6211.HEIC",
-  "/IMG_6726.HEIC",
+  "/IMG_0758.jpg",
+  "/IMG_2038.jpg",
+  "/IMG_2048.jpg",
+  "/IMG_4766.jpg",
+  "/IMG_6211.jpg",
+  "/IMG_6726.jpg",
 ];
 
 const placementImages = [
-  "/IMG_2038.HEIC",
-  "/IMG_4766.HEIC",
-  "/IMG_6211.HEIC",
-  "/IMG_0758.HEIC",
-  "/IMG_2048.HEIC",
-  "/IMG_6726.HEIC",
+  "/IMG_2038.jpg",
+  "/IMG_4766.jpg",
+  "/IMG_6211.jpg",
+  "/IMG_0758.jpg",
+  "/IMG_2048.jpg",
+  "/IMG_6726.jpg",
 ];
 
 const wallImages = [
-  "/IMG_2048.HEIC",
-  "/IMG_6726.HEIC",
-  "/IMG_0758.HEIC",
-  "/IMG_6211.HEIC",
-  "/IMG_4766.HEIC",
-  "/IMG_2038.HEIC",
+  "/IMG_2048.jpg",
+  "/IMG_6726.jpg",
+  "/IMG_0758.jpg",
+  "/IMG_6211.jpg",
+  "/IMG_4766.jpg",
+  "/IMG_2038.jpg",
 ];
 
 const slabImages = [
-  "/IMG_6211.HEIC",
-  "/IMG_2048.HEIC",
-  "/IMG_4766.HEIC",
-  "/IMG_0758.HEIC",
-  "/IMG_6726.HEIC",
-  "/IMG_2038.HEIC",
+  "/IMG_6211.jpg",
+  "/IMG_2048.jpg",
+  "/IMG_4766.jpg",
+  "/IMG_0758.jpg",
+  "/IMG_6726.jpg",
+  "/IMG_2038.jpg",
 ];
 
 const residentialImages = [
-  "/IMG_0758.HEIC",
-  "/IMG_6211.HEIC",
-  "/IMG_2038.HEIC",
-  "/IMG_2048.HEIC",
-  "/IMG_6726.HEIC",
-  "/IMG_4766.HEIC",
+  "/IMG_0758.jpg",
+  "/IMG_6211.jpg",
+  "/IMG_2038.jpg",
+  "/IMG_2048.jpg",
+  "/IMG_6726.jpg",
+  "/IMG_4766.jpg",
 ];
 
 const civilImages = [
-  "/IMG_2048.HEIC",
-  "/IMG_6211.HEIC",
-  "/IMG_0758.HEIC",
-  "/IMG_4766.HEIC",
-  "/IMG_2038.HEIC",
-  "/IMG_6726.HEIC",
+  "/IMG_2048.jpg",
+  "/IMG_6211.jpg",
+  "/IMG_0758.jpg",
+  "/IMG_4766.jpg",
+  "/IMG_2038.jpg",
+  "/IMG_6726.jpg",
 ];
 
 const Services = () => {
