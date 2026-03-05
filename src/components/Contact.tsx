@@ -1,22 +1,7 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
 import { Send } from "lucide-react";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission
-    alert("Thank you for your message! We'll be in touch soon.");
-    setFormData({ name: "", email: "", phone: "", message: "" });
-  };
-
   return (
     <section id="contact" className="py-24 bg-secondary">
       <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-16">
@@ -89,24 +74,30 @@ const Contact = () => {
         </motion.div>
 
         <motion.form
-          onSubmit={handleSubmit}
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
           className="space-y-5"
         >
+          <input type="hidden" name="form-name" value="contact" />
+          <p className="hidden">
+            <label>
+              Don’t fill this out if you’re human: <input name="bot-field" />
+            </label>
+          </p>
           <div>
             <label className="font-heading text-xs tracking-widest uppercase text-secondary-foreground/60 block mb-2">
               Name *
             </label>
             <input
               type="text"
+              name="name"
               required
-              value={formData.name}
-              onChange={(e) =>
-                setFormData({ ...formData, name: e.target.value })
-              }
               className="w-full bg-concrete-dark/50 border border-secondary-foreground/10 text-secondary-foreground px-4 py-3 focus:outline-none focus:border-primary transition-colors"
             />
           </div>
@@ -116,11 +107,8 @@ const Contact = () => {
             </label>
             <input
               type="email"
+              name="email"
               required
-              value={formData.email}
-              onChange={(e) =>
-                setFormData({ ...formData, email: e.target.value })
-              }
               className="w-full bg-concrete-dark/50 border border-secondary-foreground/10 text-secondary-foreground px-4 py-3 focus:outline-none focus:border-primary transition-colors"
             />
           </div>
@@ -130,10 +118,7 @@ const Contact = () => {
             </label>
             <input
               type="tel"
-              value={formData.phone}
-              onChange={(e) =>
-                setFormData({ ...formData, phone: e.target.value })
-              }
+              name="phone"
               className="w-full bg-concrete-dark/50 border border-secondary-foreground/10 text-secondary-foreground px-4 py-3 focus:outline-none focus:border-primary transition-colors"
             />
           </div>
@@ -143,11 +128,8 @@ const Contact = () => {
             </label>
             <textarea
               required
+              name="message"
               rows={4}
-              value={formData.message}
-              onChange={(e) =>
-                setFormData({ ...formData, message: e.target.value })
-              }
               className="w-full bg-concrete-dark/50 border border-secondary-foreground/10 text-secondary-foreground px-4 py-3 focus:outline-none focus:border-primary transition-colors resize-none"
             />
           </div>
