@@ -11,6 +11,7 @@ const navLinks = [
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", onScroll);
@@ -42,16 +43,37 @@ const Navbar = () => {
             </a>
           ))}
         </div>
+
+        {/* Mobile toggle */}
+        <button
+          type="button"
+          aria-label="Toggle navigation"
+          aria-expanded={isOpen}
+          className="md:hidden inline-flex items-center justify-center rounded-md border border-secondary-foreground/20 p-2 text-secondary-foreground/80 hover:text-primary hover:border-primary transition-colors"
+          onClick={() => setIsOpen((prev) => !prev)}
+        >
+          <span className="sr-only">Open menu</span>
+          <div className="flex flex-col gap-1">
+            <span className={`h-0.5 w-6 bg-current transition-transform ${isOpen ? "translate-y-1.5 rotate-45" : ""}`} />
+            <span className={`h-0.5 w-6 bg-current transition-opacity ${isOpen ? "opacity-0" : "opacity-100"}`} />
+            <span className={`h-0.5 w-6 bg-current transition-transform ${isOpen ? "-translate-y-1.5 -rotate-45" : ""}`} />
+          </div>
+        </button>
       </div>
 
       {/* Mobile nav */}
-      <div className="md:hidden bg-secondary">
+      <div
+        className={`md:hidden bg-secondary overflow-hidden transition-all duration-300 ${
+          isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0 pointer-events-none"
+        }`}
+      >
         <div className="flex flex-col items-center gap-6 py-6">
           {navLinks.map((link) => (
             <a
               key={link.label}
               href={link.href}
               className="font-heading text-lg tracking-widest uppercase text-secondary-foreground/80 hover:text-primary transition-colors"
+              onClick={() => setIsOpen(false)}
             >
               {link.label}
             </a>

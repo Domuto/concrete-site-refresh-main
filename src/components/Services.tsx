@@ -201,6 +201,7 @@ const Services = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
+            className="order-2 lg:order-1"
           >
             <h3 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-tight text-secondary-foreground">
               Additions, Renovations & Tenant Build-Out Concrete
@@ -219,7 +220,7 @@ const Services = () => {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 order-1 lg:order-2">
             {buildoutImages.map((image, index) => (
               <motion.div
                 key={image}
@@ -295,6 +296,7 @@ const Services = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
+            className="order-2 lg:order-1"
           >
             <h3 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-tight text-secondary-foreground">
               Cast-in-Place Structural Walls
@@ -313,7 +315,7 @@ const Services = () => {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 order-1 lg:order-2">
             {wallImages.map((image, index) => (
               <motion.div
                 key={`${image}-${index}`}
@@ -390,6 +392,7 @@ const Services = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
+            className="order-2 lg:order-1"
           >
             <h3 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-tight text-secondary-foreground">
               Residential & Small Project Concrete
@@ -412,7 +415,7 @@ const Services = () => {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 order-1 lg:order-2">
             {residentialImages.map((image, index) => (
               <motion.div
                 key={`${image}-${index}`}
