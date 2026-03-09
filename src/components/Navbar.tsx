@@ -2,11 +2,10 @@ import { useState, useEffect } from "react";
 import Logo from "@/components/Logo";
 
 const navLinks = [
-  { label: "Projects", href: "#projects" },
+  { label: "Our Story", href: "#story" },
   { label: "Services", href: "#services" },
   { label: "Safety", href: "#safety" },
   { label: "Contact Info", href: "#contact" },
-  { label: "Our Story", href: "#story" },
 ];
 
 const Navbar = () => {
