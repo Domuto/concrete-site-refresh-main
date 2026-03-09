@@ -23,7 +23,7 @@ const services = [
     title: "Pre‑Con & Consulting",
     description:
       "Budgeting, mix design support, constructability reviews, and phased scheduling guidance.",
-    image: "/IMG_9601.jpg",
+    image: "/IMG_9597.jpg",
   },
 ];
 

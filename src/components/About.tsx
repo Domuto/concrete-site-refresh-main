@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import aboutImg from "@/assets/about-concrete.jpg";
 
 const About = () => {
   return (
@@ -12,7 +11,7 @@ const About = () => {
           transition={{ duration: 0.7 }}
         >
           <img
-            src={aboutImg}
+            src="/IMG_9590.jpg"
             alt="Polished concrete floor in warehouse"
             className="w-full h-[400px] object-cover shadow-2xl"
           />

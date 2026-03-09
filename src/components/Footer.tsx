@@ -8,7 +8,7 @@ const Footer = () => {
           <Logo className="scale-90" />
 
           <div className="flex items-center gap-8">
-            {["Services", "Safety", "Contact", "Story"].map((link) => (
+            {["Projects", "Services", "Safety", "Contact", "Story"].map((link) => (
               <a
                 key={link}
                 href={`#${link === "Story" ? "story" : link.toLowerCase()}`}

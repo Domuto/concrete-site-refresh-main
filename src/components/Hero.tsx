@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import heroImg from "@/assets/hero-construction.jpg";
 
 const Hero = () => {
   return (
@@ -7,7 +6,7 @@ const Hero = () => {
       {/* Background image */}
       <div className="absolute inset-0">
         <img
-          src={heroImg}
+          src="/IMG_9609.jpg"
           alt="Industrial concrete construction site"
           className="w-full h-full object-cover"
         />

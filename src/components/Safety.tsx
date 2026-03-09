@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import safetyImg from "@/assets/structural.jpg";
 
 const safetyPoints = [
   "Daily jobsite briefings and hazard assessments",
@@ -44,7 +43,7 @@ const Safety = () => {
           transition={{ duration: 0.7, delay: 0.2 }}
         >
           <img
-            src={safetyImg}
+            src="/IMG_9584.jpg"
             alt="Concrete crew on a construction site"
             className="w-full h-[420px] object-cover shadow-2xl"
           />
