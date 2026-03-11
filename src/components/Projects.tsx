@@ -26,7 +26,7 @@ const Projects = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="relative overflow-hidden group cursor-pointer"
+          className="relative overflow-hidden group"
         >
           <img
             src="/IMG_9609.jpg"

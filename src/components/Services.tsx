@@ -118,7 +118,7 @@ const Services = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
-              className="group relative overflow-hidden cursor-pointer bg-concrete-dark"
+              className="group relative overflow-hidden bg-concrete-dark"
             >
               <div className="relative h-72 overflow-hidden">
                 <img
